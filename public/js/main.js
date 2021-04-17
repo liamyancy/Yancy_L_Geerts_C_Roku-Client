@@ -16,17 +16,18 @@
       const vm = new Vue({
           data: {
               authenticated: false,
-              isAdmin: false
+              isAdmin: false,
+              allMovies: []
           },
 
           created: function() {
-            //     fetch('/api/movies')
-            //         .then(res => res.json())
-            //         .then(data => {
-            //             console.table(data);
-            //             this.allMovies = data;
-            //   })
-            //   .catch(err => console.error(err));
+                fetch('/api/movies')
+                    .then(res => res.json())
+                    .then(data => {
+                        console.table(data);
+                        this.allMovies = data;
+              })
+              .catch(err => console.error(err));
           },
 
           methods: {
