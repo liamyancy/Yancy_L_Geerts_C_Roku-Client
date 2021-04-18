@@ -1,0 +1,39 @@
+footer {
+    font-family: $header-font-family;
+    .footBar {
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #333366;
+        a {
+            text-decoration: none;
+            color: white;
+            padding: 40px 5px 0 5px;
+            font-size: 20px;
+            &:hover {
+                background-color: #333377;
+            }
+        }
+        h2 {
+            padding: 40px 5px 0 0;
+            font-size: 20px;
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    footer {
+        .footBar {
+            display: block;
+            height: 100px;
+            background-color: #333366;
+            a {
+                display: none;
+            }
+            h2 {
+                padding: 40px 15px 0 0;
+                float: right;
+            }
+        }
+    }
+}
