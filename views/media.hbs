@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 
-{{> htmlhead }}
-
-<body>
-    <div class="wrapper">
         <main id="app">
             <div class="mediaSelectors">
                 <img class="mediaButton" src="images/Shows-Button-Parents.svg" alt="Shows">
@@ -17,12 +11,7 @@
                     <p>Title</p>
                 </section>
             </div> --}}
-            <section class="home-hero">
+            <div class="mediaSection movie-thumb">                
                 <moviethumb v-for="item in allMovies" :movie="item" :key="item.movies_id"></moviethumb>
-                <router-view></router-view>
-            </section>
+            </div>
         </main>
-    </div>
-        {{> scripts}}
-</body>
-</html>

@@ -1,0 +1,15 @@
+// fonts
+$main-font-family: 'Noto Sans', 'arial', sans-serif;
+$kids-font-family: 'Bangers', 'arial', sans-serif;
+$header-font-family: 'Bebas Neue','arial', sans-serif;
+main { color: white; }
+header, footer { color: black; }
+
+// backgrounds
+$main-bg: url(../images/Background.svg);
+$parent-bg: url(../images/Parents-Background.svg);
+$kids-bg: url(../images/Kids-Background.svg);
+
+//reset
+body, h1, h2, h3, p { margin: 0; padding: 0; }
+.hidden { display: none; }
