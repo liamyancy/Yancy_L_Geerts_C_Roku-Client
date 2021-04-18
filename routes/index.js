@@ -23,6 +23,14 @@ router.get('/', (req, res) => {
     res.render('index')
 })
 
+router.use('/media', (req, res) => {
+    res.render('media')
+})
+
+router.use('/kidsmedia', (req, res) => {
+    res.render('kidsmedia')
+})
+
 router.use((req, res) => {
     res.status(404);
     res.render("error", { layout: "errorLayout.hbs", errormessage: "you've lost your way, this page doesn't exist"})

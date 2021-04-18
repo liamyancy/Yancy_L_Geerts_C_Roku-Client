@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{> htmlhead }}
+
+<body>
+    <div class="wrapper">
+        <main id="app">
+            <div class="mediaSelectors">
+                <img class="mediaButton" src="images/Shows-Button-Parents.svg" alt="Shows">
+                <img class="mediaButton" src="images/Movies-Button.svg" alt="Movies">
+                <img class="mediaButton" src="images/Music-Button.svg" alt="Music">
+            </div>
+            {{!-- <div class="mediaSection">
+                <section class="media">
+                    <img src="" alt="Media">
+                    <p>Title</p>
+                </section>
+            </div> --}}
+            <section class="home-hero">
+                <moviethumb v-for="item in allMovies" :movie="item" :key="item.movies_id"></moviethumb>
+                <router-view></router-view>
+            </section>
+        </main>
+    </div>
+        {{> scripts}}
+</body>
+</html>

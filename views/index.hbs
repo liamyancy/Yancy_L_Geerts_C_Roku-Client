@@ -1,4 +1,18 @@
-<section class="home-hero">
-    <moviethumb v-for="item in allMovies" :movie="item" :key="item.movies_id"></moviethumb>
-        {{!-- <router-view></router-view> --}}
-</section>
+            <section class="parents-kids">
+                <div class="profile-row">
+                    <div class="column">
+                        <a href="/media"><img src="/images/Parents-Button.svg" id="profile-icon"></a>
+                        
+                        <div class="parents-text">
+                            <h3>Parents</h3>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <a href="/kidsmedia"><img src="/images/Kids-Button.svg" id="profile-icon"></a>
+                        
+                        <div class="kids-text">
+                            <h3>Kids</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>

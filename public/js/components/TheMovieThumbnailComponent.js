@@ -16,3 +16,10 @@ export default {
         }
     }
 }
+
+            // <div class="mediaSection movie-thumb">
+            //     <section class="media">
+            //         <img @click="loadPlayer(movie)" :src='"images/" + movie.movies_cover' alt="movie thumb">
+            //         <p>{{ movie.movies_title }}</p>
+            //     </section>
+            // </div>
