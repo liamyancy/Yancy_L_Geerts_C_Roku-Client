@@ -8,7 +8,7 @@
       routes: [
           { path: '/', name: 'root', component: LoginComponent },
           { path: 'users', name: 'users', component: AllUsers },
-          { path: '/home', name: 'home', component: HomeComponent, props: true }
+          { path: '/home', name: 'home', component: HomeComponent, props: true },
       ]
   });
 
