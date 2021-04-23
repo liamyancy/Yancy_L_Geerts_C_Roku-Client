@@ -1,0 +1,76 @@
+.kids-wrapper {
+    display: flex;
+    flex-direction: row;
+    background-image: $kids-bg;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    height: 1080px;
+
+    #app {
+      max-width: 2000px;
+      width: 2000px;
+      padding: 5px;
+    }
+}
+.mediaSelectors {
+	display: flex;
+	flex-direction: row;
+	margin: 10px 0 10px 0;
+	justify-content: space-evenly;
+	padding: 0 13% 0 13%;
+    img {
+		width: 75px;
+		&:hover {
+			border-radius: 40px;
+			box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.349);
+    		cursor: pointer;
+		}
+    }
+}
+.kidsMediaSection {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	border-radius: 5px;
+	background: rgb(11,140,126);
+	background: -moz-linear-gradient(0deg, rgba(11,140,126,1) 0%, rgba(67,23,129,1) 100%);
+	background: -webkit-linear-gradient(0deg, rgba(11,140,126,1) 0%, rgba(67,23,129,1) 100%);
+	background: linear-gradient(0deg, rgba(11,140,126,1) 0%, rgba(67,23,129,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0b8c7e",endColorstr="#431781",GradientType=1);
+    .media {
+		height: 120px;
+		margin: 20px;
+		border-radius: 5px;
+		position: relative;
+		video {
+			height: 100%;
+		}
+		p {
+			font-family: $main-font-family;
+			position: absolute;
+			bottom: -22px;
+		}
+	}
+}
+@media screen and (min-width: 768px) {
+	.mediaSelectors {
+		padding: 0 30% 0 30%;
+	}
+}
+@media screen and (min-width: 1024px) {
+	.mediaSelectors {
+		img {
+			width: 125px;
+			&:hover {
+				border-radius: 100px;
+			}
+		}
+		padding: 0 25% 0 25%;
+	}
+	.mediaSection {
+		.media {
+			height: 200px;
+		}
+	}
+}
