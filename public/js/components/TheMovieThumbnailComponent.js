@@ -6,7 +6,9 @@ export default {
     template: `
     
         <section class="media">
-            <img @click="loadPlayer(movie)" :src='"images/" + movie.movies_cover' alt="movie thumb">
+            <video controls>
+            <source @click="loadPlayer(movie)" :src='"video/" + movie.movies_trailer' alt="movie thumb">
+            </video>
             <p>{{ movie.movies_title }}</p>
         </section>
 
